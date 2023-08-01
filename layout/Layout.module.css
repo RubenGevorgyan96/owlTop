@@ -3,6 +3,7 @@
   display: grid;
   grid-template-columns: auto 230px minmax(320px, 1200px) auto;
   grid-template-rows: auto 1fr auto;
+
   min-height: 100vh;
   gap: 40px 30px;
   grid-template-areas:
@@ -21,6 +22,7 @@
 
 .body {
   grid-area: body;
+
   outline: none;
 }
 
@@ -29,14 +31,17 @@
 }
 
 .skipLink {
-  display: block;
   position: fixed;
-  left: 100px;
   top: 0;
+  left: 100px;
+
+  display: block;
   overflow: hidden;
+
   height: 0;
-  background-color: var(--primary);
+
   color: var(--white);
+  background-color: var(--primary);
 }
 
 .displayed {
@@ -52,6 +57,7 @@
       'footer';
     gap: 10px;
   }
+
   .sidebar {
     display: none !important;
   }

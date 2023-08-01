@@ -1,11 +1,12 @@
 /* stylelint-disable indentation */
 .reviewForm {
+  display: grid;
+  align-items: center;
+
   font-size: 14px;
   font-weight: 24px;
-  display: grid;
   grid-template-columns: [start] auto 1fr auto [end];
   gap: 20px 30px;
-  align-items: center;
 }
 
 .description,
@@ -28,10 +29,12 @@
 }
 
 .panel {
-  padding: 20px;
   position: relative;
-  border-radius: 5px;
+
   margin-top: 20px;
+  padding: 20px;
+
+  border-radius: 5px;
 }
 
 .success {
@@ -48,8 +51,9 @@
 
 .close {
   position: absolute;
-  right: 20px;
   top: 20px;
+  right: 20px;
+
   border: none;
   background: none;
 }
@@ -72,6 +76,7 @@
   .reviewForm {
     grid-template-columns: [start] 1fr [end];
   }
+
   .title {
     justify-self: stretch;
   }
