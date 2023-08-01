@@ -1,0 +1,45 @@
+/* stylelint-disable indentation */
+.sortIcon {
+  display: none;
+}
+.active {
+  font-weight: bold;
+  color: var(--primary);
+}
+.active .sortIcon {
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.active .sortIcon {
+  display: block;
+  margin-right: 8px;
+}
+
+.sort {
+  display: inline-block;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  cursor: pointer;
+}
+
+.sortName {
+  display: none;
+}
+
+.sort button {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  background: none;
+  font-size: 16px;
+  line-height: 22px;
+  cursor: pointer;
+}
+
+.sort button:not(.active) {
+  grid-template-columns: 1fr;
+}

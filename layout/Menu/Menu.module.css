@@ -1,0 +1,66 @@
+/* stylelint-disable indentation */
+.firstLevel {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  gap: 20px;
+  align-items: center;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.firstLevelActive,
+.firstLevel:hover {
+  color: var(--primary);
+}
+
+.firstLevelActive svg,
+.firstLevel:hover svg {
+  fill: var(--primary);
+}
+
+.firstLevelList {
+  list-style: none;
+  padding: 0;
+}
+
+.secondLevel {
+  margin-bottom: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--grey-dark);
+
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.secondBlock {
+  margin-top: 15px;
+  margin-left: 12px;
+  border-left: 1px solid #dfdfdf;
+  list-style: none;
+  padding: 0 0 0 32px;
+}
+
+.secondLevelBlock {
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+}
+
+.thirdLevel {
+  display: block;
+  margin-bottom: 10px;
+
+  cursor: pointer;
+  color: var(--grey-dark);
+  font-size: 14px;
+  outline-offset: -1px;
+}
+
+.thirdLevelActive,
+.thirdLevel:hover {
+  color: var(--primary);
+}
